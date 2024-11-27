@@ -1,142 +1,297 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfólio de Pedro Nunes</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f8f9fa;
-      color: #343a40;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background: linear-gradient(90deg, #4b000f, #800020);
-      color: white;
-      padding: 30px 0;
-      text-align: center;
-    }
-    header h1 {
-      font-size: 2.5rem;
-    }
-    section {
-      padding: 50px 20px;
-    }
-    footer {
-      background-color: #4b000f;
-      color: white;
-      text-align: center;
-      padding: 15px 0;
-      position: relative;
-      bottom: 0;
-      width: 100%;
-    }
-    .btn-primary {
-      background-color: #800020;
-      border: none;
-      transition: background-color 0.3s ease;
-    }
-    .btn-primary:hover {
-      background-color: #4b000f;
-    }
-    .divider {
-      height: 4px;
-      background: linear-gradient(90deg, #800020, #4b000f);
-      border: none;
-      margin: 40px auto;
-      width: 50%;
-    }
-    .project-card {
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      border-radius: 8px;
-      padding: 20px;
-      background-color: white;
-      margin-bottom: 20px;
-      transition: transform 0.3s ease;
-    }
-    .project-card:hover {
-      transform: translateY(-5px);
-    }
-    .social-icons a {
-      color: #800020;
-      margin: 0 10px;
-      font-size: 1.5rem;
-      transition: color 0.3s ease;
-    }
-    .social-icons a:hover {
-      color: #4b000f;
-    }
-  </style>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfólio de Pedro Nunes</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f8f9fa;
+        color: #343a40;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background: linear-gradient(90deg, #4b000f, #800020);
+        color: white;
+        padding: 30px 0;
+        text-align: center;
+      }
+      header h1 {
+        font-size: 2.5rem;
+      }
+      section {
+        padding: 50px 20px;
+      }
+      footer {
+        background-color: #4b000f;
+        color: white;
+        text-align: center;
+        padding: 15px 0;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+      }
+      .btn-primary {
+        background-color: #800020;
+        border: none;
+        transition: background-color 0.3s ease;
+      }
+      .btn-primary:hover {
+        background-color: #4b000f;
+      }
+      .divider {
+        height: 4px;
+        background: linear-gradient(90deg, #800020, #4b000f);
+        border: none;
+        margin: 40px auto;
+        width: 50%;
+      }
+      .project-card {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        padding: 20px;
+        background-color: white;
+        margin-bottom: 20px;
+        transition: transform 0.3s ease;
+      }
+      .project-card:hover {
+        transform: translateY(-5px);
+      }
+      .social-icons a {
+        color: #800020;
+        margin: 0 10px;
+        font-size: 1.5rem;
+        transition: color 0.3s ease;
+      }
+      .social-icons a:hover {
+        color: #4b000f;
+      }
+    </style>
 
-<body>
-  <header>
-    <h1>Portfólio de Pedro Nunes</h1>
-    <p>Explorando qualidade, automação e aprendizado constante</p>
-  </header>
+    <style>
+      .carousel-control-prev,
+      .carousel-control-next {
+        width: 10%; 
+        height: 100%; 
+      }
 
-  <main class="container mt-5">
-    <hr class="divider">
+      .carousel-control-prev-icon,
+      .carousel-control-next-icon {
+        background-color: rgba(
+          0,
+          0,
+          0,
+          0.5
+        ); 
+        border-radius: 50%; 
+        padding: 15px; 
+      }
 
-    <!-- Seção Sobre Mim -->
-    <section>
-      <h2 class="text-center mb-4">Sobre Mim</h2>
-      <p class="text-center">
-        Sou apaixonado por tecnologia e pelo impacto que ela tem em transformar vidas e negócios. 
-        Recém-graduado em Análise e Desenvolvimento de Sistemas, decidi focar na área de Qualidade de Software 
-        porque acredito que a qualidade é a ponte entre ideias incríveis e experiências perfeitas.
-        Estou sempre em busca de aprendizado, desenvolvendo projetos práticos e 
-        expandindo meus conhecimentos em automação e testes. 
-        Meu objetivo é entrar no mercado de QA e crescer continuamente, 
-        contribuindo para soluções de alta qualidade.
+      .carousel-indicators {
+        margin-bottom: 20px; 
+      }
+
+      .carousel-inner img {
+        max-height: 500px; 
+        object-fit: contain; 
+      }
+
+      h2 {
+        margin-bottom: 50px; 
+      }
+    </style>
+  </head>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <body>
+    <header>
+      <h1>Portfólio de Pedro Nunes</h1>
+      <p>Explorando qualidade, automação e aprendizado constante</p>
+    </header>
+
+    <main class="container mt-5">
+      <hr class="divider" />
+
+      <!-- Seção Sobre Mim -->
+      <section>
+        <h2 class="text-center mb-4">Sobre Mim</h2>
+        <p class="text-center">
+          Sou apaixonado por tecnologia e pelo impacto que ela tem em
+          transformar vidas e negócios. Recém-graduado em Análise e
+          Desenvolvimento de Sistemas, decidi focar na área de Qualidade de
+          Software porque acredito que a qualidade é a ponte entre ideias
+          incríveis e experiências perfeitas. Estou sempre em busca de
+          aprendizado, desenvolvendo projetos práticos e expandindo meus
+          conhecimentos em automação e testes. Meu objetivo é entrar no mercado
+          de QA e crescer continuamente, contribuindo para soluções de alta
+          qualidade.
+        </p>
+      </section>
+
+      <hr class="divider" />
+
+      <!-- Seção Certificados -->
+      <section class="certificates">
+        <h2 class="text-center mb-4">Certificados</h2>
+        <div
+          id="certificatesCarousel"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <!-- Indicadores -->
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#certificatesCarousel"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#certificatesCarousel"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#certificatesCarousel"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+
+          <!-- Slides -->
+          <div class="carousel-inner text-center">
+            <div class="carousel-item active">
+              <img
+                src="certificados/CertificadoSFPC.jpg"
+                class="d-block mx-auto img-fluid rounded shadow-sm"
+                alt="Scrum Foundation Professional Certificate - CertiProf"
+              />
+              <p class="mt-3">
+                Scrum Foundation Professional Certificate - CertiProf
+              </p>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="certificados/DioFormacaoQa.jpg"
+                class="d-block mx-auto img-fluid rounded shadow-sm"
+                alt="Introdução ao Mercado de Qualidade de Software - DIO"
+              />
+              <p class="mt-3">
+                Introdução ao Mercado de Qualidade de Software - DIO
+              </p>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="certificados/QualitersClubDominandoPostman.jpg"
+                class="d-block mx-auto img-fluid rounded shadow-sm"
+                alt="Dominando Postman - Testando e Automatizando APIs - QualitersClub"
+              />
+              <p class="mt-3">
+                Dominando Postman - Testando e Automatizando APIs -
+                QualitersClub
+              </p>
+            </div>
+          </div>
+
+          <!-- Controles -->
+          <button
+            class="carousel-control-prev custom-carousel-control"
+            type="button"
+            data-bs-target="#certificatesCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button
+            class="carousel-control-next custom-carousel-control"
+            type="button"
+            data-bs-target="#certificatesCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon"></span>
+            <span class="visually-hidden">Próximo</span>
+          </button>
+        </div>
+      </section>
+
+      <hr class="divider" />
+
+      <!-- Seção Projetos -->
+      <section>
+        <h2 class="text-center mb-4">Projetos</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="project-card">
+              <h4>Teste de API com Postman</h4>
+              <p>
+                Automação de testes utilizando Newman e geração de relatórios
+                customizados.
+              </p>
+              <a
+                href="https://github.com/nunescode/serveRestAPI"
+                class="btn btn-primary"
+                ><i class="fab fa-github"></i> Ver Projeto</a
+              >
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="project-card">
+              <h4>Automação com Robot Framework</h4>
+              <p>Em andamento</p>
+              <a href="#" class="btn btn-primary"
+                ><i class="fab fa-github"></i> Ver Projeto</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr class="divider" />
+
+      <!-- Seção Contato -->
+      <section>
+        <h2 class="text-center mb-4">Contato</h2>
+        <div class="text-center">
+          <p>
+            Entre em contato comigo para colaborar ou saber mais sobre meus
+            projetos!
+          </p>
+          <div class="social-icons">
+            <a href="mailto:pedro.hq_@outlook.com"
+              ><i class="fas fa-envelope"></i
+            ></a>
+            <a href="https://linkedin.com/in/nunescodex"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a href="https://github.com/nunescode"
+              ><i class="fab fa-github"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        &copy; 2024 Pedro Henrique Nunes Ribeiro do Nascimento - Todos os
+        direitos reservados.
       </p>
-    </section>
-
-    <hr class="divider">
-
-    <!-- Seção Projetos -->
-    <section>
-      <h2 class="text-center mb-4">Projetos</h2>
-      <div class="row">
-        <div class="col-md-6">
-          <div class="project-card">
-            <h4>Teste de API com Postman</h4>
-            <p>Automação de testes utilizando Newman e geração de relatórios customizados.</p>
-            <a href="https://github.com/nunescode/serveRestAPI" class="btn btn-primary"><i class="fab fa-github"></i> Ver Projeto</a>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="project-card">
-            <h4>Automação com Robot Framework</h4>
-            <p>Em andamento</p>
-            <a href="#" class="btn btn-primary"><i class="fab fa-github"></i> Ver Projeto</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <hr class="divider">
-
-    <!-- Seção Contato -->
-    <section>
-      <h2 class="text-center mb-4">Contato</h2>
-      <div class="text-center">
-        <p>Entre em contato comigo para colaborar ou saber mais sobre meus projetos!</p>
-        <div class="social-icons">
-          <a href="mailto:pedro.hq_@outlook.com"><i class="fas fa-envelope"></i></a>
-          <a href="https://linkedin.com/in/nunescodex"><i class="fab fa-linkedin"></i></a>
-          <a href="https://github.com/nunescode"><i class="fab fa-github"></i></a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2024 Pedro Henrique Nunes Ribeiro do Nascimento - Todos os direitos reservados.</p>
-  </footer>
-</body>
+    </footer>
+  </body>
 </html>
