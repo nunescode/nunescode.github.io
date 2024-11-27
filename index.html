@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio de Pedro Nunes</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+      color: #343a40;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: linear-gradient(90deg, #4b000f, #800020);
+      color: white;
+      padding: 30px 0;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5rem;
+    }
+    section {
+      padding: 50px 20px;
+    }
+    footer {
+      background-color: #4b000f;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+    .btn-primary {
+      background-color: #800020;
+      border: none;
+      transition: background-color 0.3s ease;
+    }
+    .btn-primary:hover {
+      background-color: #4b000f;
+    }
+    .divider {
+      height: 4px;
+      background: linear-gradient(90deg, #800020, #4b000f);
+      border: none;
+      margin: 40px auto;
+      width: 50%;
+    }
+    .project-card {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      padding: 20px;
+      background-color: white;
+      margin-bottom: 20px;
+      transition: transform 0.3s ease;
+    }
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+    .social-icons a {
+      color: #800020;
+      margin: 0 10px;
+      font-size: 1.5rem;
+      transition: color 0.3s ease;
+    }
+    .social-icons a:hover {
+      color: #4b000f;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Portfólio de Pedro Nunes</h1>
+    <p>Explorando qualidade, automação e aprendizado constante</p>
+  </header>
+
+  <main class="container mt-5">
+    <hr class="divider">
+
+    <!-- Seção Sobre Mim -->
+    <section>
+      <h2 class="text-center mb-4">Sobre Mim</h2>
+      <p class="text-center">
+        Sou apaixonado por tecnologia e pelo impacto que ela tem em transformar vidas e negócios. 
+        Recém-graduado em Análise e Desenvolvimento de Sistemas, decidi focar na área de Qualidade de Software 
+        porque acredito que a qualidade é a ponte entre ideias incríveis e experiências perfeitas.
+        Estou sempre em busca de aprendizado, desenvolvendo projetos práticos e 
+        expandindo meus conhecimentos em automação e testes. 
+        Meu objetivo é entrar no mercado de QA e crescer continuamente, 
+        contribuindo para soluções de alta qualidade.
+      </p>
+    </section>
+
+    <hr class="divider">
+
+    <!-- Seção Projetos -->
+    <section>
+      <h2 class="text-center mb-4">Projetos</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="project-card">
+            <h4>Teste de API com Postman</h4>
+            <p>Automação de testes utilizando Newman e geração de relatórios customizados.</p>
+            <a href="https://github.com/nunescode/serveRestAPI" class="btn btn-primary"><i class="fab fa-github"></i> Ver Projeto</a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="project-card">
+            <h4>Automação com Robot Framework</h4>
+            <p>Em andamento</p>
+            <a href="#" class="btn btn-primary"><i class="fab fa-github"></i> Ver Projeto</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider">
+
+    <!-- Seção Contato -->
+    <section>
+      <h2 class="text-center mb-4">Contato</h2>
+      <div class="text-center">
+        <p>Entre em contato comigo para colaborar ou saber mais sobre meus projetos!</p>
+        <div class="social-icons">
+          <a href="mailto:pedro.hq_@outlook.com"><i class="fas fa-envelope"></i></a>
+          <a href="https://linkedin.com/in/nunescodex"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/nunescode"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Pedro Henrique Nunes Ribeiro do Nascimento - Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
